@@ -23,11 +23,11 @@ pod 'WKInputKit'
 
 ## Author
 
-objective, wangkai@ctdcn.com
+WangKai, jlrslwang@163.com
 
 ## License
 
 WKInputKit is available under the MIT license. See the LICENSE file for more info.
-=======
+
 # WKIntputKit
->>>>>>> d93e07f6073ab44adcb6b2648d053b91d00494c7
+
