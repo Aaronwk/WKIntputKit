@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WKInputKit
 
 [![CI Status](https://img.shields.io/travis/objective/WKInputKit.svg?style=flat)](https://travis-ci.org/objective/WKInputKit)
@@ -27,3 +28,6 @@ objective, wangkai@ctdcn.com
 ## License
 
 WKInputKit is available under the MIT license. See the LICENSE file for more info.
+=======
+# WKIntputKit
+>>>>>>> d93e07f6073ab44adcb6b2648d053b91d00494c7
