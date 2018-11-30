@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WKInputKit_Example' do
+  pod 'WKInputKit', :path => '../'
+
+  target 'WKInputKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
