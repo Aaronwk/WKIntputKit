@@ -1,0 +1,16 @@
+PODS:
+  - WKInputKit (0.1.0)
+
+DEPENDENCIES:
+  - WKInputKit (from `../`)
+
+EXTERNAL SOURCES:
+  WKInputKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WKInputKit: f7438792f1cfcb6600df256c02870df1b7c907dd
+
+PODFILE CHECKSUM: 33354b7286cd8fdf6ee956a873eb2d5465a61f3b
+
+COCOAPODS: 1.5.3

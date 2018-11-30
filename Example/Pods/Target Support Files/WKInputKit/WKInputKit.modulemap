@@ -1,0 +1,6 @@
+framework module WKInputKit {
+  umbrella header "WKInputKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
