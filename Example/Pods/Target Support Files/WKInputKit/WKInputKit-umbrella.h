@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "WKCheckTool.h"
+#import "WKInputConst.h"
+#import "WKInputEnum.h"
+#import "WKInputUtil.h"
+#import "WKTextField.h"
+#import "WKTextView.h"
 
 FOUNDATION_EXPORT double WKInputKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char WKInputKitVersionString[];

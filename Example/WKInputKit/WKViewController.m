@@ -7,8 +7,15 @@
 //
 
 #import "WKViewController.h"
+#import "WKTextField.h"
+#import "WKCheckTool.h"
+#import "WKTextView.h"
 
-@interface WKViewController ()
+
+@interface WKViewController ()<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet WKTextField *testTF;
+@property (weak, nonatomic) IBOutlet WKTextView *testTV;
 
 @end
 
@@ -17,13 +24,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.testTF.maxLength = 10;
+    self.testTF.inputLimitConditions = WKInputAllowPunct | WKInputAllowEnglishAndNumber;
+    self.testTV.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
+    self.testTV.roundedCornerRadius = 5;
+    self.testTV.borderWidth = 1;
+    self.testTV.borderColor = [UIColor greenColor];
+	
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if([self.testTF isInputLimitConditionsOfContent:string textField:textField] || [string isEqualToString:@""]) {
+        return YES;
+    }
+    return NO;
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+}
+
+
 
 @end

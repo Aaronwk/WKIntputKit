@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyK-JG-xzy" customClass="WKTextField">
+                                <rect key="frame" x="50" y="166" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="whP-gf-Uak" id="yXd-0E-tzc"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pyf-p9-Wt9" customClass="WKTextView">
+                                <rect key="frame" x="10" y="246" width="355" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="O2K-zU-2vk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iyK-JG-xzy" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="146" id="MFo-11-08x"/>
+                            <constraint firstAttribute="trailing" secondItem="iyK-JG-xzy" secondAttribute="trailing" constant="50" id="X5L-TV-voc"/>
+                            <constraint firstItem="pyf-p9-Wt9" firstAttribute="top" secondItem="iyK-JG-xzy" secondAttribute="bottom" constant="50" id="gjs-ej-hWX"/>
+                            <constraint firstItem="pyf-p9-Wt9" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="10" id="j7Z-85-Zg7"/>
+                            <constraint firstAttribute="trailing" secondItem="pyf-p9-Wt9" secondAttribute="trailing" constant="10" id="nxB-Nd-AxM"/>
+                            <constraint firstItem="iyK-JG-xzy" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="50" id="tci-SC-IwW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testTF" destination="iyK-JG-xzy" id="cPS-8I-y3k"/>
+                        <outlet property="testTV" destination="pyf-p9-Wt9" id="t4W-3U-IZy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

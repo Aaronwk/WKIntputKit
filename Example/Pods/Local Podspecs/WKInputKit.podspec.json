@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of WKInputKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/objective/WKInputKit",
+  "homepage": "https://github.com/Aaronwk/WKIntputKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "objective": "wangkai@ctdcn.com"
+    "WangKai": "jlrslwang@163.com"
   },
   "source": {
-    "git": "https://github.com/objective/WKInputKit.git",
+    "git": "https://github.com/Aaronwk/WKIntputKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
