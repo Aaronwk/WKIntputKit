@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # WKInputKit
 
 [![CI Status](https://img.shields.io/travis/objective/WKInputKit.svg?style=flat)](https://travis-ci.org/objective/WKInputKit)
